@@ -15,7 +15,7 @@ def convertJSON(infile,outfile):
         for build in data['builds']:
             for path in build['parts']:
                 # print(path['path'])
-                path['path'] = path['path'].replace("..", "https://arendst.github.io/Tasmota-firmware")
+                path['path'] = path['path'].replace("..", "https://refactorau.github.io/Tasmota-firmware")
         # print(data)
         j = json.dumps(data,indent=4)
         f = open(outfile,"w")
@@ -26,7 +26,7 @@ def getManifestEntry(manifest):
     entry = {}
     with open(manifest) as json_file:
         data = json.load(json_file)
-        entry['path'] = "https://arendst.github.io/Tasmota-firmware/" + manifest
+        entry['path'] = "https://refactorau.github.io/Tasmota-firmware/" + manifest
         entry['name'] = data['name']
         entry['chipFamilies'] = []
         for build in data['builds']:
@@ -99,13 +99,13 @@ def main(args):
         output[section] = merged
 
     release = output.pop("release")
-    development  = output.pop("development")
+    #development  = output.pop("development")
     #unofficial = output.pop("unofficial")
 
 
     final_json = {}
     final_json["release"] = release
-    final_json["development"] = development
+    #final_json["development"] = development
     #final_json["unofficial"] = unofficial
     for key in output:
         final_json[key] = output[key] # just in case we have another section in the future
