@@ -1,1 +1,11 @@
-
+{
+    "release": [
+        {
+            "path": "https://refactorau.github.io/Tasmota-firmware/manifest_ext/release.tasmota32-refactor.manifest.json",
+            "name": "Refactor Tasmota32",
+            "chipFamilies": [
+                "ESP32"
+            ]
+        }
+    ]
+}

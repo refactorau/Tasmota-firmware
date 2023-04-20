@@ -1,0 +1,16 @@
+{
+    "name": "Refactor Tasmota32",
+    "new_install_prompt_erase": true,
+    "builds": [
+        {
+            "chipFamily": "ESP32",
+            "improv": true,
+            "parts": [
+                {
+                    "path": "https://refactorau.github.io/Tasmota-firmware/release-firmware/tasmota32/tasmota32-refactor.factory.bin",
+                    "offset": 0
+                }
+            ]
+        }
+    ]
+}
