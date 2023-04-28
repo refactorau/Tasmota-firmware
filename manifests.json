@@ -7,5 +7,14 @@
                 "ESP32"
             ]
         }
+    ],
+    "development": [
+        {
+            "path": "https://refactorau.github.io/Tasmota-firmware/manifest_ext/development.tasmota32-refactor.manifest.json",
+            "name": "Refactor Tasmota32 (Development)",
+            "chipFamilies": [
+                "ESP32"
+            ]
+        }
     ]
 }
